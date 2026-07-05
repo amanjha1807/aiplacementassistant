@@ -1,0 +1,33 @@
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+
+# LLM Providers
+langchain-openai
+langchain-groq
+langchain-google-genai
+
+# Embeddings
+sentence-transformers
+transformers
+torch
+
+# Vector Databases
+chromadb
+faiss-cpu
+
+# Document Loaders
+pypdf
+pymupdf
+unstructured
+python-docx
+pandas
+openpyxl
+# Parsing
+beautifulsoup4
+lxml
+langchain-huggingface
+langchain-chroma
+langchain-groq

@@ -1,0 +1,676 @@
+title: "AI Interview Preparation Assistant — Master 
+Knowledge Base" subtitle: "RAG-Ready Reference 
+Corpus (2026 Edition) — Service-Based & Product-Based 
+Companies" author: "Interview Prep Knowledge Base" 
+date: "2026" 
+Document Overview 
+This document is a structured textual knowledge base built for Retrieval-Augmented 
+Generation (RAG). It is organized into nine parts, each mapped to one feature of the AI 
+Interview Preparation Assistant. Every section uses consistent heading levels (#, ##, ###) and 
+short, self-contained paragraphs so the document splits cleanly into semantically complete 
+chunks (200–400 tokens each) for embedding and retrieval. 
+Tagging convention used throughout this document: each entry carries inline metadata 
+tags in square brackets — [Company], [Type: Service-based / Product-based], 
+[Category], [Difficulty], [Year: 2026] — so a retriever can filter by company, 
+category, or difficulty at query time. 
+Scope note: "Every company" cannot be enumerated exhaustively in a static document; 
+instead this corpus covers the companies that dominate 2026 Indian and global campus/lateral 
+hiring — a representative, continuously extensible set across IT services, product/tech, 
+fintech, SaaS, and e-commerce. New company entries should follow the exact same template 
+so they merge cleanly into the existing chunk structure. 
+ 
+PART 1: Company Interview Experiences 
+1.1 How Interview Processes Have Shifted for 2026 
+[Category: Industry Trend] [Year: 2026] 
+By 2026, most large employers have folded generative-AI literacy into every stage of hiring 
+rather than treating it as a separate skill. Online assessments increasingly use AI-proctoring 
+with live webcam + screen monitoring, adaptive question difficulty, and plagiarism detection 
+tuned to catch AI-generated code submissions. Many product-based companies now include 
+at least one round that explicitly evaluates how a candidate uses AI coding assistants 
+(Copilot-style tools) — not to replace thinking, but to see if the candidate can direct, verify, 
+and debug AI-generated code responsibly. Service-based companies have compressed their 
+traditional multi-round pipelines, replacing some technical rounds with a single AI-scored 
+coding assessment plus a shorter human interview focused on communication, aptitude, and
+domain fit. Across both categories, resume screening is now commonly AI-assisted, so 
+keyword alignment with the job description matters more than before. 
+1.2 Service-Based Companies 
+TCS (Tata Consultancy Services) 
+[Company: TCS] [Type: Service-based] [Category: Company Experience] [Year: 2026] 
+Hiring process: TCS NQT (National Qualifier Test) — covers Numerical Ability, Verbal 
+Ability, Reasoning Ability, and a Programming Logic section, followed by an optional 
+Advanced coding section for premium roles (TCS Ninja vs TCS Digital). Shortlisted 
+candidates go through a Technical Interview (fundamentals of OOP, DBMS, OS, basic DSA, 
+and one live coding problem) and an HR/Managerial round focused on communication and 
+flexibility for relocation/shifts. 
+2026 update: The NQT now includes a short "AI-assisted problem solving" segment where 
+candidates are given a bug in AI-generated code and must identify and fix it. Domain-specific 
+tracks (Cloud, AI/ML, Cybersecurity) have separate technical rounds. 
+Sample experience narrative: A candidate reported that the technical interview opened with 
+"walk me through a project on your resume," moved into SQL joins and normalization 
+questions, and closed with a live problem on array rotation, where the interviewer cared more 
+about the candidate's approach narration than the final syntax. 
+Tips: Be fluent in one language end-to-end (Java, Python, or C++), know DBMS normal 
+forms and OS process scheduling cold, and prepare a 90-second project walkthrough. 
+ 
+Infosys 
+[Company: Infosys] [Type: Service-based] [Category: Company Experience] [Year: 2026] 
+Hiring process: InfyTQ / Infosys assessment with Aptitude, Pseudocode reading, and 
+Coding rounds, split between Infosys SP (Specialist Programmer) for stronger coders and 
+the standard Digital/Power Programmer tracks. Technical interview covers core CS 
+fundamentals plus one DSA problem of easy-medium difficulty. HR round assesses 
+adaptability and long-term commitment. 
+2026 update: Infosys has expanded its Specialist Programmer track intake and added a 
+system-design-lite question (e.g., "design a simple URL shortener") even at fresher level for 
+SP applicants. 
+Tips: Practice pseudocode-reading questions specifically — they appear almost every cycle 
+and are unlike typical LeetCode problems. Revise time and space complexity analysis 
+explicitly.
+Wipro 
+[Company: Wipro] [Type: Service-based] [Category: Company Experience] [Year: 2026] 
+Hiring process: Wipro NLTH/Elite pipeline — online test with Aptitude, Verbal, Coding, 
+and an Essay-writing section. Technical + HR interviews are often combined into a single 
+panel round for efficiency. 
+2026 update: The essay-writing section increasingly asks candidates to reflect on 
+technology-and-society topics such as responsible AI use, reflecting Wipro's push into AI 
+services consulting. 
+Tips: Practice structured essay writing (150–200 words) on tech-ethics topics, and be ready 
+to discuss any AI tools you've used in academic projects. 
+ 
+Accenture 
+[Company: Accenture] [Type: Service-based] [Category: Company Experience] [Year: 2026] 
+Hiring process: Cognitive + Technical assessment (verbal, logical, coding), followed by a 
+Technical interview covering programming basics, a DSA problem, and cloud/AI-service 
+familiarity questions for Digital/Cloud/AI-focused hires. HR round evaluates cultural fit and 
+willingness to work across Accenture's consulting client base. 
+2026 update: A growing share of Accenture roles are tied to GenAI delivery teams, so 
+interviewers frequently ask candidates to explain a recent AI concept (RAG, fine-tuning, 
+prompt engineering) in plain language, even for non-AI roles. 
+Tips: Have a simple, accurate one-paragraph explanation of RAG, LLMs, and prompt 
+engineering ready regardless of your target role. 
+ 
+Cognizant 
+[Company: Cognizant] [Type: Service-based] [Category: Company Experience] [Year: 2026] 
+Hiring process: GenC / GenC Next / GenC Elevate tracks with tiered difficulty. Online 
+assessment includes aptitude, coding, and a communication-assessment video round 
+(asynchronous, AI-scored) in many 2026 drives. Technical interview is standard CS 
+fundamentals + one DSA problem; HR round is conversational. 
+Tips: Practice speaking clearly on camera for the asynchronous video round — tone and 
+clarity are scored algorithmically alongside content.
+HCLTech, Capgemini, Tech Mahindra, LTIMindtree 
+[Company: HCLTech, Capgemini, Tech Mahindra, LTIMindtree] [Type: Service-based] 
+[Category: Company Experience] [Year: 2026] 
+These four follow a broadly similar structure in 2026: an online aptitude + coding test, a 
+technical interview covering fundamentals (DBMS, OOP, networking basics) and one or two 
+DSA problems, and an HR round. Capgemini's technical rounds lean toward scenario-based 
+questions ("client asks for X, how do you respond?"). Tech Mahindra and LTIMindtree 
+increasingly hire into telecom, network engineering, and enterprise-AI delivery pools, so 
+domain-specific questions (5G basics, ERP concepts) can appear alongside generic CS 
+fundamentals. HCLTech's TechBee and Fresher Engineer Trainee programs have lighter 
+technical bars but heavier emphasis on trainability and communication. 
+Tips: For all four, prepare 2–3 STAR-format stories about teamwork and adaptability — 
+these companies weight cultural fit heavily relative to raw coding difficulty. 
+1.3 Product-Based & Tech Companies 
+Tier 1 Global Product Companies — Google, Microsoft, Amazon, Meta, 
+Apple, Netflix 
+[Company: Google, Microsoft, Amazon, Meta, Apple, Netflix] [Type: Product-based] 
+[Category: Company Experience] [Year: 2026] 
+Common structure: Online Assessment (2–3 DSA problems, medium-hard) → 1–2 
+Phone/Video Technical Screens → Onsite/Virtual Onsite loop of 4–6 rounds mixing DSA, 
+System Design (for SDE-2 and above), Behavioral, and a "Bar Raiser"-style culture round 
+(Amazon explicitly; other companies have informal equivalents). 
+2026 updates: 
+• Amazon interviews now map every behavioral answer explicitly to Leadership 
+Principles, including newer ones emphasizing "Deliver Results with AI-assisted 
+efficiency." Expect a follow-up question asking how you used AI tools responsibly on 
+a real project. 
+• Google has increased emphasis on "Googleyness" plus a coding round that allows an 
+IDE with AI-autocomplete disabled, specifically to test unaided reasoning, alongside 
+a separate round that allows AI tools to test collaborative debugging. 
+• Microsoft system design rounds for 2026 frequently include a Copilot/AI-feature 
+integration angle — e.g., "design a feature that adds an AI assistant to this product." 
+• Meta continues its two-DSA-round + one system design + one behavioral ("Meta 
+values") structure; coding bar remains high on graph and DP problems. 
+• Apple interviews are team-specific and less standardized; expect deep technical drill-
+down from the specific team you're interviewing with, plus a strong focus on product 
+taste and attention to detail. 
+• Netflix hires more senior-weighted and interviews focus heavily on real-world system 
+tradeoffs and "freedom and responsibility" culture questions rather than pure 
+algorithmic puzzles.
+Tips: For all Tier 1 companies, practice explaining your thought process out loud, not just 
+producing correct code. Prepare 6–8 STAR stories covering conflict, failure, leadership, and 
+ambiguity. 
+ 
+Indian Product & Unicorn Companies — Flipkart, Swiggy, Zomato, Paytm, 
+PhonePe, Razorpay, CRED, Meesho 
+[Company: Flipkart, Swiggy, Zomato, Paytm, PhonePe, Razorpay, CRED, Meesho] [Type: 
+Product-based] [Category: Company Experience] [Year: 2026] 
+Common structure: Online coding round (2 problems, medium difficulty), 2–3 technical 
+interviews mixing DSA and system design (even at SDE-1 level for well-funded startups), 
+and a hiring-manager/culture round. 
+2026 update: Fintech players (Paytm, PhonePe, Razorpay, CRED) have added scenario-
+based fraud-detection and reliability-design questions given regulatory scrutiny in digital 
+payments; expect "how would you design a system to detect suspicious UPI transactions in 
+real time" style prompts. Quick-commerce and food-delivery companies (Swiggy, Zomato, 
+Meesho, Flipkart) emphasize scale and latency: "design for 10 million concurrent orders 
+during a flash sale." 
+Tips: Know basic distributed-systems vocabulary (idempotency, eventual consistency, rate 
+limiting, message queues) — it comes up even in SDE-1 interviews at these companies now. 
+ 
+Enterprise SaaS & Dev-Tool Companies — Salesforce, Atlassian, Adobe, 
+Freshworks, Zoho, ServiceNow 
+[Company: Salesforce, Atlassian, Adobe, Freshworks, Zoho, ServiceNow] [Type: Product-
+based] [Category: Company Experience] [Year: 2026] 
+Common structure: Coding round (often on HackerRank/CodeSignal), technical interview 
+with OOP/design-pattern questions (SaaS companies weight LLD heavily because of large 
+shared codebases), and a values/culture interview. 
+2026 update: Adobe and Salesforce increasingly ask candidates to critique or extend AI-
+generated code snippets as part of the technical round, reflecting internal Copilot-style 
+tooling adoption. Zoho is notable for its own in-house written test (Zoho aptitude test) that is 
+harder and more idiosyncratic than typical service-company tests, with strong emphasis on 
+logical/output-prediction questions. 
+Tips: Brush up on SOLID principles and 3–4 common design patterns (Factory, Singleton, 
+Observer, Strategy) — these show up disproportionately often at SaaS companies.
+Ride-Hailing, Cloud & Infra — Uber, Ola, Google Cloud/AWS/Azure delivery 
+teams 
+[Company: Uber, Ola, Cloud Infra teams] [Type: Product-based] [Category: Company 
+Experience] [Year: 2026] 
+Common structure: DSA rounds emphasizing graphs and geo-spatial problems (nearest 
+driver, ETA estimation), one system design round (design a ride-matching system, design a 
+surge-pricing engine), and a behavioral round. 
+Tips: Practice graph algorithms (Dijkstra, BFS/DFS on grids, union-find) specifically — 
+geo/logistics companies over-index on these relative to generic DSA prep lists. 
+ 
+PART 2: DSA (Data Structures & 
+Algorithms) Question Bank 
+2.1 How This Bank Is Organized 
+[Category: DSA] [Year: 2026] 
+Questions are grouped by topic. Each topic entry lists the core concept, 2026 interview 
+relevance, and a representative question set spanning Easy → Hard, with company tags 
+indicating where each pattern is commonly asked. In 2026, interviewers weight approach 
+explanation and complexity trade-off reasoning more heavily than raw memorized 
+solutions, because AI coding assistants have made "getting a working solution" less 
+differentiating than "explaining why this solution is correct and optimal." 
+2.2 Arrays & Strings 
+[Category: DSA] [Topic: Arrays & Strings] 
+Core concepts: two-pointer technique, prefix sums, sliding window, in-place manipulation, 
+sorting-based tricks. 
+1. [Easy] Move all zeros to the end of an array while preserving order — asked at TCS, 
+Infosys, Amazon. 
+2. [Easy] Find the maximum subarray sum (Kadane's Algorithm) — asked almost 
+universally across service and product companies. 
+3. [Medium] Longest substring without repeating characters — asked at Microsoft, 
+Flipkart, Adobe. 
+4. [Medium] Merge overlapping intervals — asked at Google, Uber, Razorpay. 
+5. [Medium] Find all pairs in an array with a given sum, optimized to O(n) — asked at 
+Cognizant, Wipro, Paytm. 
+6. [Hard] Trapping rain water — asked at Amazon, Meta, Zoho. 
+7. [Hard] Minimum window substring — asked at Google, Microsoft.
+2.3 Linked Lists 
+[Category: DSA] [Topic: Linked Lists] 
+Core concepts: fast-slow pointers, reversal in groups, cycle detection. 
+1. [Easy] Reverse a singly linked list, iterative and recursive — universal. 
+2. [Medium] Detect and remove a cycle in a linked list (Floyd's algorithm) — asked at 
+TCS Digital, Amazon. 
+3. [Medium] Merge two sorted linked lists — asked at Infosys SP, Flipkart. 
+4. [Hard] Reverse nodes in k-group — asked at Microsoft, Adobe. 
+5. [Hard] Flatten a multilevel doubly linked list — asked at Meta, Salesforce. 
+2.4 Stacks & Queues 
+[Category: DSA] [Topic: Stacks & Queues] 
+Core concepts: monotonic stacks, queue-based simulation, design problems. 
+1. [Easy] Valid parentheses matching — universal. 
+2. [Medium] Next greater element using a monotonic stack — asked at Wipro, 
+Cognizant, Ola. 
+3. [Medium] Implement a queue using two stacks (and vice versa) — common at service 
+companies. 
+4. [Hard] Sliding window maximum using a deque — asked at Google, Amazon. 
+2.5 Trees & Binary Search Trees 
+[Category: DSA] [Topic: Trees] 
+Core concepts: traversals, height/balance checks, LCA, BST properties. 
+1. [Easy] Level-order traversal (BFS) of a binary tree — universal. 
+2. [Medium] Lowest common ancestor in a BST and in a general binary tree — asked at 
+Amazon, Flipkart, Zoho. 
+3. [Medium] Validate a binary search tree — asked at Microsoft, Adobe. 
+4. [Hard] Serialize and deserialize a binary tree — asked at Google, Meta. 
+5. [Hard] Construct a binary tree from inorder and preorder traversal — asked at Infosys 
+SP, TCS Digital. 
+2.6 Graphs 
+[Category: DSA] [Topic: Graphs] 
+Core concepts: BFS/DFS, shortest path, topological sort, union-find, minimum spanning tree. 
+1. [Easy] Number of islands (grid DFS/BFS) — universal, especially at logistics 
+companies.
+2. [Medium] Course schedule / detect cycle via topological sort — asked at Amazon, 
+Google, Uber. 
+3. [Medium] Dijkstra's shortest path — asked at Ola, Uber, Swiggy for ETA-style 
+problems. 
+4. [Hard] Alien dictionary (topological sort on characters) — asked at Google, 
+Microsoft. 
+5. [Hard] Minimum spanning tree via Kruskal's/Prim's with union-find — asked at Meta, 
+Cloud infra teams. 
+2.7 Dynamic Programming 
+[Category: DSA] [Topic: Dynamic Programming] 
+Core concepts: state definition, transition, memoization vs tabulation, space optimization. 
+1. [Easy] Fibonacci with memoization, climbing stairs — universal warm-up. 
+2. [Medium] Longest common subsequence — asked at TCS, Infosys, Accenture. 
+3. [Medium] 0/1 Knapsack and its variants — asked at Amazon, Flipkart, Paytm. 
+4. [Hard] Edit distance — asked at Google, Adobe. 
+5. [Hard] Longest increasing subsequence in O(n log n) — asked at Meta, Microsoft. 
+6. [Hard] Word break with backtracking optimization — asked at Google, Salesforce. 
+2.8 Greedy Algorithms 
+[Category: DSA] [Topic: Greedy] 
+1. [Easy] Activity selection / interval scheduling — common at service companies. 
+2. [Medium] Job sequencing with deadlines — asked at Wipro, Cognizant. 
+3. [Medium] Minimum number of platforms/meeting rooms required — asked at 
+Amazon, Ola. 
+4. [Hard] Huffman encoding — asked at product companies with a compression/media 
+focus (Adobe, Netflix). 
+2.9 Backtracking 
+[Category: DSA] [Topic: Backtracking] 
+1. [Medium] N-Queens problem — asked at Google, Microsoft. 
+2. [Medium] Generate all permutations/subsets — universal. 
+3. [Hard] Sudoku solver — asked at Adobe, Meta. 
+4. [Hard] Word search in a grid — asked at Amazon, Flipkart. 
+2.10 Heaps / Priority Queues 
+[Category: DSA] [Topic: Heaps] 
+1. [Medium] Kth largest element in a stream — asked at Amazon, Razorpay. 
+2. [Medium] Merge k sorted lists — asked at Microsoft, Google.
+3. [Hard] Find median from a data stream using two heaps — asked at Meta, Flipkart. 
+2.11 Tries & Bit Manipulation 
+[Category: DSA] [Topic: Tries and Bit Manipulation] 
+1. [Medium] Implement a Trie with insert/search/startsWith — asked at Google, Adobe 
+(autocomplete-related). 
+2. [Medium] Longest word in a dictionary formed by prefixes — asked at product 
+companies with search features. 
+3. [Easy] Single number (XOR trick) — common warm-up across all companies. 
+4. [Medium] Count set bits, power of two checks — common at service-based aptitude-
+adjacent coding rounds. 
+2.12 2026-Specific DSA Trend Note 
+[Category: DSA] [Year: 2026] 
+A growing share of technical interviews now include a short "debug the AI-generated 
+solution" segment: the interviewer shows a plausible-looking but subtly incorrect solution 
+(often with an off-by-one error, wrong base case, or missed edge case) and asks the candidate 
+to find and fix the bug under time pressure. Practicing code review of imperfect solutions — 
+not just writing from scratch — is now a distinct, valuable prep activity. 
+ 
+PART 3: HR & Behavioral Question Bank 
+3.1 Question Categories 
+[Category: HR] [Year: 2026] 
+HR and behavioral rounds are evaluated on structure, honesty, and self-awareness rather than 
+"correct" answers. The STAR framework (Situation, Task, Action, Result) remains the 
+standard structure for behavioral answers in 2026, with an added emphasis on a fifth element 
+some coaches call "L" for Learning — what you would do differently. 
+3.2 Self-Introduction & Motivation 
+[Category: HR] [Subcategory: Self-Introduction] 
+1. Tell me about yourself. 
+2. Walk me through your resume. 
+3. Why do you want to work at this company specifically? 
+4. Why should we hire you over another candidate? 
+5. What are your short-term and long-term career goals? 
+6. Why are you looking to leave your current company? (for experienced candidates)
+Framework guidance: Structure the self-introduction as Present → Past → Future: current 
+role/status, one or two relevant past experiences, and why this specific role fits your future 
+direction. Keep it under 90 seconds. 
+3.3 Behavioral (STAR-Based) 
+[Category: HR] [Subcategory: Behavioral] 
+1. Tell me about a time you disagreed with a teammate or manager. How did you handle 
+it? 
+2. Describe a situation where you failed. What did you learn? 
+3. Tell me about a time you had to work under a tight deadline. 
+4. Describe a time you took initiative without being asked. 
+5. Tell me about a time you had to learn something completely new very quickly. 
+6. Describe a conflict within a team project and how it was resolved. 
+7. Tell me about a time you received critical feedback. How did you respond? 
+Framework guidance: Keep each STAR answer to 4–6 sentences: 1 sentence Situation, 1 
+sentence Task, 2–3 sentences Action (this should be the majority of the answer), 1 sentence 
+Result with a measurable or observable outcome. 
+3.4 Situational / Hypothetical 
+[Category: HR] [Subcategory: Situational] 
+1. If your manager assigns you a task you disagree with, what would you do? 
+2. How would you handle a situation where two teammates are not cooperating with 
+each other? 
+3. If you found a critical bug right before a release deadline, what would you do? 
+4. How would you prioritize if you were given three urgent tasks at once? 
+3.5 Company & Culture Fit 
+[Category: HR] [Subcategory: Culture Fit] [Year: 2026] 
+1. What do you know about our company's recent products or initiatives? 
+2. How do you align with our company values? (Research the specific values — e.g., 
+Amazon's Leadership Principles, Meta's core values.) 
+3. Are you comfortable working in a hybrid/remote setup? 
+4. How do you stay updated with technology trends? 
+5. [2026] How do you currently use AI tools (ChatGPT, Copilot, Claude, etc.) in your 
+work or studies, and how do you make sure you're not over-relying on them? 
+6. [2026] Tell me about a time an AI tool gave you an incorrect or misleading 
+suggestion — how did you catch it? 
+3.6 Salary, Logistics & Closing Questions 
+[Category: HR] [Subcategory: Logistics]
+1. What are your salary expectations? 
+2. What is your notice period? (for experienced candidates) 
+3. Are you open to relocation? 
+4. Do you have any offers from other companies? 
+5. Do you have any questions for us? (Always prepare 2–3 thoughtful questions — 
+about team structure, growth path, or current projects.) 
+3.7 Answer-Quality Checklist 
+[Category: HR] [Subcategory: Guidance] 
+A strong HR answer is specific (names a real project or event), honest about weaknesses 
+without being self-defeating, concise (avoids rambling beyond 60–90 seconds), and ends with 
+a takeaway or result rather than trailing off. 
+ 
+PART 4: System Design Question Bank 
+4.1 Low-Level Design (LLD) 
+[Category: System Design] [Subcategory: LLD] 
+Core focus: OOP principles, SOLID, design patterns, class diagrams, extensibility. 
+1. Design a parking lot system (classes, extensibility for new vehicle types). 
+2. Design a library management system. 
+3. Design an elevator/lift control system. 
+4. Design a rate limiter (token bucket / sliding window counter) at the class level. 
+5. Design a movie ticket booking system with seat-locking logic. 
+6. Design a chess game (board representation, move validation, turn management). 
+7. Design a logging framework with pluggable output destinations. 
+Concepts interviewers probe: single responsibility, open-closed principle, composition over 
+inheritance, interface segregation, and how the design handles a plausible future requirement 
+change. 
+4.2 High-Level Design (HLD) 
+[Category: System Design] [Subcategory: HLD] 
+Core focus: scalability, availability, consistency trade-offs, data partitioning, caching, load 
+balancing. 
+1. Design a URL shortener (like Bit.ly) — asked almost everywhere as a baseline HLD 
+question.
+2. Design a news feed system (like Instagram/Facebook feed) — fan-out on write vs 
+read trade-offs. 
+3. Design WhatsApp/a chat application — message delivery guarantees, online-status, 
+group chat scaling. 
+4. Design Uber/Ola — driver-rider matching, geo-indexing, surge pricing. 
+5. Design Netflix/a video streaming service — CDN usage, adaptive bitrate, 
+recommendation pipeline at a high level. 
+6. Design a distributed rate limiter for an API gateway. 
+7. Design an e-commerce checkout and inventory system — handling flash-sale 
+concurrency (Flipkart Big Billion Days-style scenario). 
+8. Design a notification system (push, SMS, email) at scale. 
+9. Design a distributed cache (like Redis) — eviction policies, consistency. 
+10. Design a search autocomplete system — Trie-based backend combined with ranking. 
+4.3 2026-Specific System Design Questions (AI/LLM 
+Systems) 
+[Category: System Design] [Subcategory: AI Systems] [Year: 2026] 
+This category has become common at both product-based companies (as a direct AI-systems 
+question) and increasingly at service-based companies for AI-delivery roles. 
+1. Design a Retrieval-Augmented Generation (RAG) pipeline for a customer-support 
+chatbot — cover document ingestion, chunking strategy, embedding generation, 
+vector storage, retrieval, and re-ranking before the LLM call. 
+2. Design a vector database at a high level — indexing strategy (HNSW/IVF), 
+approximate nearest neighbor trade-offs, metadata filtering. 
+3. Design an LLM inference-serving system — batching requests, GPU utilization, 
+latency vs throughput trade-offs, caching repeated prompts. 
+4. Design an AI agent orchestration system that can call multiple tools/APIs reliably — 
+cover retries, tool-call validation, and guarding against infinite loops. 
+5. Design a content-moderation pipeline that combines a fast classical filter with an 
+LLM-based second pass for ambiguous cases. 
+6. Design a system to detect and rate-limit abuse of a public LLM-powered API (prompt 
+injection defenses, cost control per user). 
+4.4 System Design Answer Structure Checklist 
+[Category: System Design] [Subcategory: Guidance] 
+A well-structured system design answer moves through: (1) clarify requirements and scale 
+(users, QPS, data volume), (2) define the high-level API/entities, (3) propose a high-level 
+architecture diagram in words, (4) deep-dive into the 1–2 hardest components, (5) discuss 
+trade-offs explicitly (consistency vs availability, latency vs cost), and (6) mention bottlenecks 
+and how you'd address them at 10x scale.
+PART 5: Resume-Based Interview Question 
+Generation 
+5.1 Purpose 
+[Category: Resume-Based Interview] [Year: 2026] 
+This module generates interview questions dynamically from a candidate's uploaded resume, 
+rather than from a generic bank. The guidance below defines how questions should be 
+derived from each resume section so the assistant produces relevant, specific, and non-
+generic questions. 
+5.2 Question Templates by Resume Section 
+[Category: Resume-Based Interview] [Subcategory: Templates] 
+From Projects: 
+• "You mention [Project Name] — what was the single hardest technical decision you 
+made in it, and why?" 
+• "What would you change about the architecture of [Project Name] if you rebuilt it 
+today?" 
+• "What was the scale (users/data volume) this project actually operated at, and how did 
+that shape your design choices?" 
+From Work Experience: 
+• "In your role at [Company], you mention [specific achievement/metric] — walk me 
+through how you achieved that number." 
+• "What was the biggest technical challenge in your day-to-day work at [Company]?" 
+• "Describe a disagreement you had with a senior engineer or manager at [Company] 
+and how it was resolved." 
+From Skills Section: 
+• "You've listed [Skill, e.g., Kubernetes] — describe a real scenario where you used it, 
+not just that you know it." 
+• If a skill is listed but no corresponding project/experience mentions it: "I notice [Skill] 
+is listed but I don't see it used elsewhere on your resume — how proficient are you, 
+really, and where did you apply it?" 
+From Certifications: 
+• "What motivated you to pursue [Certification Name], and what's one concept from it 
+you've actually applied?" 
+From Gaps or Career Switches:
+• "I see a gap between [Date] and [Date] — can you walk me through that period?" 
+• "You moved from [Previous Domain] to [Current Domain] — what prompted that 
+shift, and what transferable skills are you bringing?" 
+From Achievements/Awards: 
+• "Tell me more about [Award/Achievement] — what was the selection criteria, and 
+what made your work stand out?" 
+5.3 2026 Guidance: AI-Assisted Resume Red Flags 
+[Category: Resume-Based Interview] [Year: 2026] 
+Interviewers in 2026 are trained to probe project descriptions that sound AI-generated or 
+generic ("Leveraged cutting-edge technologies to optimize scalable solutions"). If a 
+candidate's resume bullet is vague, the assistant should generate a specificity-forcing follow-
+up such as: "Can you give me the exact numbers — how many users, what latency 
+improvement, what was the baseline before your change?" 
+ 
+PART 6: Coding Hints Framework (Not 
+Direct Answers) 
+6.1 Philosophy 
+[Category: Coding Hints] [Year: 2026] 
+The assistant must never output a complete working solution when a user is practicing a 
+problem — doing so removes the learning value and mirrors exactly the over-reliance-on-AI 
+failure mode that interviewers now explicitly test for. Instead, hints escalate through four 
+tiers, and the assistant should only reveal the next tier if the user has genuinely attempted the 
+previous one. 
+6.2 The Four-Tier Hint Escalation Model 
+[Category: Coding Hints] [Subcategory: Framework] 
+Tier 1 — Clarifying Nudge: Ask a question that reframes the problem, without giving away 
+technique. Example (for "Trapping Rain Water"): "What determines how much water a single 
+position can hold — think about what's to its left and right." 
+Tier 2 — Pattern Hint: Name the category of technique without the exact algorithm. 
+Example: "This is a classic two-pointer or precomputation problem — have you tried 
+precomputing something for each position first?"
+Tier 3 — Structural Hint: Point to the specific data structure or concept, still without code. 
+Example: "Try maintaining a leftMax and rightMax array (or two pointers moving inward) — 
+think about which one is the true constraint at each index." 
+Tier 4 — Near-Solution Hint (only after real attempts): Provide pseudocode-level 
+guidance and complexity target, still not full working code. Example: "Iterate with two 
+pointers from both ends, tracking the max seen from each side; at each step, the water trapped 
+at the smaller-max side is maxSeen − height[current]. Target: O(n) time, O(1) space." 
+6.3 Hint Templates by Problem Type 
+[Category: Coding Hints] [Subcategory: Templates] 
+• Array/Two-Pointer problems: Tier 1 asks about sorted order or boundary 
+relationships; Tier 4 gives pointer-movement logic without exact code. 
+• DP problems: Tier 1 asks "what decision are you making at each step, and what do 
+you need to remember from previous steps?"; Tier 4 gives the recurrence relation in 
+words, not code. 
+• Graph problems: Tier 1 asks whether the problem is about reachability, shortest 
+path, or ordering; Tier 4 names the algorithm (BFS/Dijkstra/topological sort) and the 
+key invariant to maintain. 
+• Tree problems: Tier 1 asks what traversal order naturally fits the question; Tier 4 
+describes what each recursive call should return, not the code itself. 
+6.4 Guardrails 
+[Category: Coding Hints] [Subcategory: Guardrails] 
+The assistant should never paste runnable code for the user's exact stated problem unless the 
+user has explicitly asked to see a reference solution after attempting it, and even then should 
+show the solution with an explanation of the reasoning, not just raw code, and should follow 
+up by asking the user to re-explain the approach in their own words to confirm understanding. 
+ 
+PART 7: Voice Interaction Module 
+7.1 Purpose 
+[Category: Voice Interaction] [Year: 2026] 
+The voice module simulates a spoken mock interview, since a large share of real interviews 
+in 2026 (technical screens, HR rounds, even asynchronous AI-scored video rounds) happen 
+verbally. This section provides the scripts, tone rules, and feedback templates the voice agent 
+should follow. 
+7.2 Interviewer Persona & Tone Guidelines
+[Category: Voice Interaction] [Subcategory: Persona] 
+The voice agent should sound calm, professional, and mildly warm — not robotic, not overly 
+casual. It should pause naturally after asking a question (do not rapid-fire the next question), 
+use brief acknowledgments ("Got it," "That makes sense," "Interesting approach") before 
+follow-ups, and avoid interrupting the candidate mid-answer. 
+7.3 Sample Mock Interview Flow (Technical Round) 
+[Category: Voice Interaction] [Subcategory: Sample Flow] 
+1. Opening: "Thanks for joining. Let's start with a quick introduction — tell me a bit 
+about your background and what you've been working on recently." 
+2. Warm-up technical question: "Let's start with something straightforward — how 
+would you reverse a linked list?" 
+3. Follow-up probing: "Good. Can you walk me through the time and space complexity 
+of that approach?" 
+4. Escalation: "Now let's make it slightly harder — what if the list also has a random 
+pointer to any other node?" 
+5. Closing: "That's all from my side on the coding portion. Do you have any questions 
+about the role or the team?" 
+7.4 Sample Mock Interview Flow (HR Round) 
+[Category: Voice Interaction] [Subcategory: Sample Flow] 
+1. "Tell me about yourself." 
+2. "What drew you to apply for this specific role?" 
+3. "Tell me about a time you faced a conflict at work or in a group project." 
+4. Real-time follow-up based on candidate's answer (dynamically generated — e.g., if 
+the candidate mentions a deadline, ask "How did you communicate the risk of missing 
+that deadline to your manager?"). 
+5. "Do you have any questions for me?" 
+7.5 Real-Time Feedback Phrasing Templates 
+[Category: Voice Interaction] [Subcategory: Feedback] 
+• On a rambling answer: "That's a good start — can you tighten that into the core 
+situation, your action, and the result, in about three sentences?" 
+• On a vague technical answer: "Can you be more specific about the exact data 
+structure or algorithm you'd use here?" 
+• On strong pacing/filler words: "You're using 'um' and 'like' fairly often — try pausing 
+silently instead of filling the gap; it reads as more confident." 
+• On a strong answer: "That was clear and well-structured — good use of a specific 
+example with a measurable result." 
+7.6 Voice-Specific Preparation Tips
+[Category: Voice Interaction] [Subcategory: Tips] 
+Practice thinking out loud, since silent problem-solving does not translate well to voice/video 
+interviews. Practice explaining code changes verbally without a shared screen, since many 
+2026 async video-screening tools ask candidates to describe their approach on camera before 
+or instead of writing code. 
+ 
+PART 8: Personalized Learning Roadmap 
+Templates 
+8.1 How Roadmaps Are Personalized 
+[Category: Learning Roadmap] [Year: 2026] 
+Roadmaps are generated along two axes: track (target company type and role level) and 
+timeline (available prep time). Below are template roadmaps; the assistant should adapt week 
+counts and topic depth based on the user's actual timeline and current skill assessment (e.g., 
+from a diagnostic quiz). 
+8.2 Track: Fresher — Service-Based Companies (6-Week 
+Standard Plan) 
+[Category: Learning Roadmap] [Track: Fresher Service-Based] [Duration: 6 Weeks] 
+• Week 1–2: Aptitude (quant, logical reasoning, verbal) + core DSA basics (arrays, 
+strings, basic sorting/searching). 
+• Week 3: DBMS fundamentals (normalization, joins, transactions) and OS basics 
+(process scheduling, deadlocks, memory management). 
+• Week 4: OOP concepts across your chosen language + intermediate DSA (linked 
+lists, stacks/queues, recursion). 
+• Week 5: Mock technical interviews focused on one live coding problem + project 
+walkthroughs; practice explaining resume projects in under 90 seconds. 
+• Week 6: Full mock interview cycles (technical + HR), company-specific research 
+(pick 3 target companies from Part 1.2), and voice-based mock practice. 
+8.3 Track: Fresher — Product-Based Companies (10-
+Week Intensive Plan) 
+[Category: Learning Roadmap] [Track: Fresher Product-Based] [Duration: 10 Weeks] 
+• Week 1–3: Core DSA topics (arrays, strings, linked lists, stacks/queues, trees) with 
+3–4 problems per topic per day, Easy → Medium.
+• Week 4–5: Graphs and Dynamic Programming, Medium → Hard, with emphasis on 
+explaining approach before coding. 
+• Week 6: Backtracking, heaps, tries, bit manipulation; begin light system design 
+reading (Part 4.2 basics: URL shortener, rate limiter). 
+• Week 7: Full HLD practice — 1 system design problem every 2 days, focusing on the 
+answer structure checklist (4.4). 
+• Week 8: Behavioral prep — build 8 STAR stories covering the categories in Part 3.3; 
+research target company culture/values. 
+• Week 9: Full mock interview loops (2 DSA rounds + 1 system design + 1 
+behavioral), voice-based practice for verbalizing solutions. 
+• Week 10: Weak-area review based on mock interview feedback, light practice only 
+(avoid new topics this close to interviews), resume-based mock Q&A. 
+8.4 Track: Experienced Professional (3–5 yrs), Lateral 
+Hiring (8-Week Plan) 
+[Category: Learning Roadmap] [Track: Experienced] [Duration: 8 Weeks] 
+• Week 1–2: DSA refresher focused on Medium-Hard problems across all topics — 
+assume fundamentals are intact; prioritize speed and clean code. 
+• Week 3–4: System design deep-dive — both LLD (design patterns, refactoring 
+scenarios) and HLD (at least 6 full HLD problems from Part 4.2–4.3, including one 
+AI-systems question). 
+• Week 5: Leadership/behavioral prep — stories demonstrating technical ownership, 
+mentoring, and cross-team collaboration, mapped to the target company's specific 
+values (e.g., Amazon Leadership Principles). 
+• Week 6: Resume-based deep dives — be ready to defend every architectural decision 
+on every listed project in detail. 
+• Week 7: Full mock loops including a bar-raiser-style round; practice negotiating 
+scope and clarifying ambiguous requirements out loud. 
+• Week 8: Company-specific final review, compensation/negotiation prep, and voice-
+based rehearsal of the full interview loop. 
+8.5 Track: Career Switcher / Non-CS Background (12-
+Week Foundational Plan) 
+[Category: Learning Roadmap] [Track: Career Switcher] [Duration: 12 Weeks] 
+• Week 1–2: Programming fundamentals and basic problem-solving (no DSA jargon 
+yet — build comfort with loops, functions, recursion). 
+• Week 3–5: Core DSA from the ground up (Part 2.2–2.5), slower pace, with a strong 
+emphasis on correctness before optimization. 
+• Week 6–7: DBMS and OS fundamentals for interview purposes (not full coursework 
+depth — just the commonly-asked concepts). 
+• Week 8–9: Intermediate DSA (graphs, DP basics) plus first exposure to system 
+design fundamentals.
+• Week 10: Resume-building guidance — how to frame non-CS or bootcamp projects 
+credibly, and anticipate the "why are you switching careers" question with a strong 
+narrative. 
+• Week 11–12: Mock interviews at service-based company difficulty first, then 
+progressively harder; heavy HR/behavioral rehearsal since narrative and motivation 
+questions carry extra weight for career switchers. 
+8.6 2-Week Crash Plan (Any Track, Interview Imminent) 
+[Category: Learning Roadmap] [Track: Crash Plan] [Duration: 2 Weeks] 
+• Days 1–4: Highest-yield DSA patterns only — two pointers, sliding window, 
+DFS/BFS on grids, basic DP (top 30 most-asked problems for the target company 
+from Part 2). 
+• Days 5–7: One system design problem per day if targeting product-based roles (skip 
+if targeting service-based roles at fresher level). 
+• Days 8–10: Behavioral story-building (minimum 5 solid STAR stories) and company 
+research. 
+• Days 11–13: Full mock interviews daily, voice-based rehearsal, and resume Q&A 
+prep. 
+• Day 14: Light review only — re-read your STAR stories and project summaries; 
+avoid learning new material. 
+ 
+PART 9: 2026 Industry Trends Summary 
+[Category: Industry Trend] [Year: 2026] 
+A concise reference for how hiring has evolved, useful as retrieval context for any question 
+about "what's different this year." 
+• AI fluency is now a baseline expectation, not a bonus skill — interviewers across 
+both service-based and product-based companies routinely ask how candidates use AI 
+tools responsibly. 
+• Asynchronous, AI-scored video interviews are common in early screening stages at 
+large-volume hirers (service-based companies especially), evaluating clarity, 
+structure, and confidence alongside content. 
+• "Debug the AI-generated code" segments have become a standard technical-round 
+addition, testing code-review skill rather than from-scratch generation alone. 
+• System design has moved earlier in the pipeline — even SDE-1/fresher-adjacent 
+interviews at well-funded product companies and startups now include lightweight 
+design questions. 
+• RAG, vector databases, LLM-serving, and agent-orchestration have joined the 
+standard system-design question pool at AI-forward companies and AI-delivery teams 
+within service-based companies.
+• Resume specificity is scrutinized more heavily, since AI tools make it easy to write 
+impressive-sounding but vague bullet points; interviewers are trained to probe for 
+concrete numbers and details. 
+• Behavioral interviews increasingly ask about AI-tool judgment — recognizing 
+when an AI suggestion was wrong, and how the candidate verified or corrected it. 
+ 
+Appendix: Chunking & Retrieval Notes for 
+Implementers 
+[Category: Implementation Note] 
+For best RAG performance with this document: split on ## and ### headers so each chunk 
+corresponds to one company, one topic, or one framework section; keep the inline 
+[Company]/[Category]/[Difficulty]/[Year] tags attached to their chunk as retrievable 
+metadata (store them as metadata fields, not just inline text, if your pipeline supports 
+metadata filtering); and keep chunk size in the 200–400 token range, which most sections in 
+this document already respect by design. When new companies or questions are added, 
+follow the exact heading and tagging pattern used above so new content merges into the same 
+retrieval schema without reformatting older chunks.
