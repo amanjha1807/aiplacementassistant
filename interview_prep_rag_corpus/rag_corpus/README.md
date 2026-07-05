@@ -1,88 +1,324 @@
-# AI Interview Preparation Assistant — RAG Corpus (2026)
+# 🤖 AI Placement Assistant
 
-This corpus replaces the single monolithic PDF with **one Markdown file per company** plus **separate topic files**, each carrying YAML frontmatter metadata and internal `##` headers. This structure is designed to solve PDF-chunking problems: no multi-column layout, no page-break artifacts, no OCR ambiguity — just clean UTF-8 Markdown that any text splitter (LangChain `MarkdownHeaderTextSplitter`, LlamaIndex `MarkdownNodeParser`, etc.) can chunk deterministically.
+An AI-powered Placement Preparation Assistant built using **Retrieval-Augmented Generation (RAG)**, **LangChain**, **ChromaDB**, **Hybrid Retrieval (Semantic + BM25)**, and **Streamlit**.
 
-## Folder Structure
+The assistant helps students prepare for technical interviews, online assessments, HR interviews, DSA, system design, and company-specific recruitment processes by retrieving relevant knowledge from a curated knowledge base before generating responses with an LLM.
+
+---
+
+## 🚀 Features
+
+- 📚 RAG-based Question Answering
+- 🧠 Conversation Memory
+- 🔍 Hybrid Retrieval (Semantic + BM25)
+- 🏢 Company-specific Knowledge Retrieval
+- 🌍 Global Topic Retrieval
+- 📄 YAML Metadata Parsing
+- ✂️ Intelligent Markdown Chunking
+- 🎯 Query Analysis & Query Rewriting
+- 🤖 LLM-powered Answer Generation
+- 💬 Streamlit Chat Interface
+- 📚 Source Attribution for every response
+
+---
+
+# 🏗️ System Architecture
 
 ```
-rag_corpus/
-├── companies/
-│   ├── service_based/        (9 files — TCS, Infosys, Wipro, Accenture, Cognizant,
-│   │                           HCLTech, Capgemini, Tech Mahindra, LTIMindtree)
-│   └── product_based/        (22 files — Google, Microsoft, Amazon, Meta, Apple,
-│                               Netflix, Flipkart, Swiggy, Zomato, Paytm, PhonePe,
-│                               Razorpay, CRED, Meesho, Salesforce, Atlassian, Adobe,
-│                               Freshworks, Zoho, ServiceNow, Uber, Ola)
-├── topics/
-│   ├── dsa.md
-│   ├── system_design.md
-│   ├── hr.md
-│   ├── projects.md               (resume/project-based interview questions)
-│   ├── coding_hints.md
-│   ├── voice_interaction.md
-│   ├── learning_roadmaps.md
-│   └── industry_trends_2026.md
+                    User Query
+                         │
+                         ▼
+              Conversation Memory
+                         │
+                         ▼
+                 Query Rewriter
+                         │
+                         ▼
+                 Query Analyzer
+                         │
+        ┌────────────────┴────────────────┐
+        ▼                                 ▼
+ Company Semantic Search          Global Semantic Search
+        │                                 │
+        ▼                                 ▼
+ Company BM25 Search             Global BM25 Search
+        └──────────────┬──────────────────┘
+                       ▼
+               Hybrid Retrieval
+                       ▼
+             Duplicate Removal
+                       ▼
+                Prompt Template
+                       ▼
+                      LLM
+                       ▼
+                 Final Response
+```
+
+---
+
+# 📂 Project Structure
+
+```
+AI-Placement-Assistant/
+│
+├── app.py
+├── answergenerator.py
+├── prompt_template.py
+│
+├── query_analyzer.py
+├── query_rewriter.py
+├── conversation_memory.py
+│
+├── smart_hybrid_retriever.py
+├── keyword_retriever.py
+├── global_retriever.py
+│
+├── load_vectorstore.py
+├── embedder.py
+│
+├── directoryloader.py
+├── yamlparser.py
+├── document_preprocessor.py
+├── splitter.py
+├── hybrid_chunker.py
+├── create_vectorstore.py
+│
+├── llm.py
+│
+├── chroma_db/
+├── interview_prep_rag_corpus/
+│
+├── requirements.txt
 └── README.md
 ```
 
-31 company files + 8 topic files = 39 source documents.
-
-## File Format (every file)
-
-```markdown
----
-company: "Google"            # (company files only)
-type: "Product-based"        # or "Service-based" / "topic_file"
-category: "company_experience"  # or dsa / system_design / hr / projects / etc.
-tags: ["Google", "product-based", "FAANG", "big tech"]
-year: 2026
-source: "AI Interview Prep Assistant Knowledge Base"
 ---
 
-# Title
+# 🛠️ Tech Stack
 
-## Section Header
-Self-contained paragraph(s) for this section...
+### Languages
 
-## Next Section Header
-...
+- Python
+
+### Frameworks & Libraries
+
+- LangChain
+- ChromaDB
+- HuggingFace Embeddings
+- Streamlit
+- Sentence Transformers
+- PyYAML
+
+### Retrieval
+
+- Semantic Search
+- BM25 Keyword Search
+- Hybrid Retrieval
+
+### LLM
+
+- OpenRouter / Compatible LLM Provider
+
+---
+
+# 📖 Knowledge Base
+
+The assistant retrieves information from a curated markdown corpus containing:
+
+### Company Guides
+
+- Amazon
+- Google
+- Microsoft
+- Adobe
+- Meta
+- Netflix
+- Uber
+- Flipkart
+- TCS
+- Infosys
+- Accenture
+- Wipro
+- Cognizant
+- LTIMindtree
+- HCLTech
+- and more...
+
+### Technical Topics
+
+- Data Structures & Algorithms
+- System Design
+- HR Interview Questions
+- Resume & Projects
+- Coding Hints
+- Learning Roadmaps
+
+---
+
+# 🔍 Retrieval Pipeline
+
+The application combines multiple retrieval strategies:
+
+### Semantic Search
+
+Uses vector embeddings stored in ChromaDB for semantic similarity.
+
+### BM25 Retrieval
+
+Keyword-based retrieval for exact matches.
+
+### Hybrid Retrieval
+
+Merges semantic and BM25 results to improve recall.
+
+### Conversation Memory
+
+Remembers the current company and intent to support follow-up questions.
+
+Example:
+
+```
+User:
+Tell me about Amazon OA
+
+↓
+
+User:
+What about HR round?
+
+↓
+
+Automatically rewritten as
+
+Amazon HR Round
 ```
 
-Every `##` section is written to be a complete, self-contained thought (150–350 words) — it should make sense on its own if returned as a single retrieved chunk, without depending on the previous section for context.
+---
 
-## Recommended Ingestion Pipeline
+# ✨ Example Queries
 
-1. **Load** — read each `.md` file's YAML frontmatter separately from the body (e.g., `python-frontmatter` in Python, or `gray-matter` in JS).
-2. **Chunk** — split the body on `##` headers (`MarkdownHeaderTextSplitter` with `headers_to_split_on=[("#", "h1"), ("##", "h2")]`). Each resulting chunk should land naturally in the 150–400 token range given how these files are written; only split further if a section runs unusually long.
-3. **Attach metadata** — merge the file-level frontmatter (company, type, category, year, tags) into every chunk's metadata, plus the `h1`/`h2` header text LangChain/LlamaIndex adds automatically. This is what enables filtered retrieval like "only DSA chunks tagged Amazon" or "only 2026-tagged trend chunks."
-4. **Embed** — embed the chunk text only (not the YAML frontmatter) to avoid polluting the embedding with metadata noise; keep frontmatter purely as a metadata sidecar.
-5. **Index** — store in your vector DB with metadata fields: `company`, `type`, `category`, `year`, `tags`.
+```
+Amazon OA Pattern
 
-## Example: LangChain-style loading snippet
+Infosys DSA Preparation
 
-```python
-import frontmatter
-from langchain.text_splitter import MarkdownHeaderTextSplitter
+Google Interview Process
 
-splitter = MarkdownHeaderTextSplitter(
-    headers_to_split_on=[("#", "h1"), ("##", "h2")]
-)
+Accenture HR Questions
 
-def load_file(path):
-    post = frontmatter.load(path)
-    chunks = splitter.split_text(post.content)
-    for chunk in chunks:
-        chunk.metadata.update(post.metadata)   # merge YAML frontmatter into chunk metadata
-    return chunks
+Dynamic Programming Roadmap
+
+System Design Basics
+
+Difference between Stack and Heap
+
+Resume Project Ideas
 ```
 
-## Extending the Corpus
+---
 
-To add a new company, copy any file under `companies/service_based/` or `companies/product_based/` as a template and keep the same six `##` sections (`Overview`, `Hiring Process`, `Interview Rounds`, `2026 Updates`, `Sample Candidate Experience`, `Preparation Tips`) so it merges into the same retrieval schema. To add a new DSA/HR/System Design entry, add a new `##` subsection to the relevant topic file following the existing `tags: [...]` inline convention.
+# ⚙️ Installation
 
-## Why This Replaces the Single PDF
+Clone the repository
 
-- No layout/column/table artifacts that break PDF text extraction.
-- Deterministic chunk boundaries (`##` headers) instead of relying on page breaks or font-size heuristics.
-- Per-file and per-chunk metadata for filtered retrieval (e.g., "TCS only," "DSA only," "2026-tagged only").
-- Each company or topic can be updated independently without regenerating one giant document.
+```bash
+git clone https://github.com/<your-username>/AI-Placement-Assistant.git
+```
+
+Move into the project
+
+```bash
+cd AI-Placement-Assistant
+```
+
+Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 🚀 Build the Vector Database
+
+```bash
+python create_vectorstore.py
+```
+
+---
+
+# ▶️ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 📸 Screenshots
+
+Add screenshots of:
+
+- Chat Interface
+- Retrieval Sources
+- Conversation Memory
+- Streamlit Dashboard
+
+---
+
+# 🔮 Future Improvements
+
+- Cross-Encoder Reranking
+- LLM-based Query Rewriting
+- Metadata Ranking
+- RAG Evaluation (RAGAS)
+- Docker Support
+- Authentication
+- Admin Dashboard
+- Knowledge Base Upload Interface
+- Multi-user Session Management
+
+---
+
+# 🤝 Contributing
+
+Contributions, feature requests, and suggestions are welcome.
+
+Fork the repository and submit a pull request.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author:
+
+  Aman Jha
+
+
+
+⭐ If you found this project useful, consider giving it a star!
