@@ -3,6 +3,7 @@ langchain
 langchain-core
 langchain-community
 langchain-text-splitters
+langchain-openrouter
 
 # LLM Providers
 langchain-openai
