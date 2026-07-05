@@ -31,3 +31,4 @@ lxml
 langchain-huggingface
 langchain-chroma
 langchain-groq
+rank-bm25
