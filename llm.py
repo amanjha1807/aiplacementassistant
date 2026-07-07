@@ -1,13 +1,13 @@
 # llm.py
+
+
 from dotenv import load_dotenv
-from langchain_openrouter import ChatOpenRouter
+from langchain_groq import ChatGroq
+
 load_dotenv()
 
-llm = ChatOpenRouter(
-    model="openrouter/free",
-    temperature=0.5
+llm = ChatGroq(
+    model="llama-3.3-70b-versatile",
+    temperature=0.2,
+    max_tokens=2048
 )
-
-#response = llm.invoke("Tell me about Cristiano Ronaldo in 5 lines")
-#print(response.content)
-
